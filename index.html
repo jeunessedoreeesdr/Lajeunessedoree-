@@ -71,6 +71,21 @@
     @media(max-width:900px){.nav-links{gap:13px}.funding{grid-template-columns:1fr}}
     @media(max-width:600px){.team-groups,.committee-grid,.boost-grid{grid-template-columns:1fr}.committee-section,.funding{padding:23px}.boost-network{padding:20px}}
     @media(max-width:560px){.nav-links a[href="#boost"]{display:inline-block;color:#e6b94d}.nav-links{gap:10px;font-size:.78rem}}
+
+    .activity{padding-right:98px}.activity-sticker{position:absolute;z-index:2;right:18px;top:19px;display:grid;place-items:center;width:58px;height:58px;border-radius:18px;background:#e7bb61;color:#101014;border:2px solid #f5db9a;box-shadow:0 8px 22px #0006;font-size:2rem;transform:rotate(8deg)}
+    .activity:nth-child(2n) .activity-sticker{background:#d9e3ff;border-color:#91a9e9;transform:rotate(-8deg)}
+    @media(max-width:560px){.activity{padding-right:80px}.activity-sticker{width:48px;height:48px;font-size:1.6rem}}
+
+    .boost-icon{display:grid;place-items:center;width:54px;height:54px;margin:20px 0 2px;border-radius:15px;background:#e7bb61;border:2px solid #f5db9a;box-shadow:0 8px 22px #0005;font-size:1.8rem;transform:rotate(5deg)}
+    .boost-grid article:nth-child(even) .boost-icon{background:#d9e3ff;border-color:#91a9e9;transform:rotate(-5deg)}
+
+    .activity{padding-right:26px}.heading-emoji{display:inline-block;margin-right:.1em;font-family:Arial,Helvetica,sans-serif;letter-spacing:0;vertical-align:-.03em}
+    .voice-form-link{display:inline-flex;align-items:center;justify-content:center;margin-top:20px;padding:13px 20px;border-radius:99px;background:#e6b94d;color:#101012;text-decoration:none;font-weight:850}.voice-form-link:hover{background:#f6d681}
+    @media(max-width:560px){.activity{padding-right:23px}}
+
+    .form-url{display:block;margin-top:14px;color:#e8cb8d;font-size:.78rem;overflow-wrap:anywhere;text-decoration:underline}
+    /* Sur téléphone, afficher toutes les sections du site dans le menu. */
+    @media(max-width:560px){.nav{display:block;padding-top:14px;padding-bottom:14px}.brand{display:block;margin-bottom:12px}.nav-links{display:flex;flex-wrap:wrap;gap:8px 15px;font-size:.82rem}.nav-links a:not(.nav-vote),.nav-links a:nth-child(2),.nav-links a:nth-child(3){display:inline-flex}.nav-links .nav-vote{padding:6px 11px}}
   </style>
 </head>
 <body>
@@ -110,20 +125,20 @@
 </section>
 <div class="date-strip">LE 30 SEPTEMBRE, VOTE JEUNESSE DORÉE ✦</div>
 <section class="ideas" id="idees"><div class="wrap"><div class="section-head"><span class="eyebrow">Ce qu’on veut faire avancer</span><h2>Des idées pour notre école.</h2><p>Six priorités concrètes pour améliorer le quotidien des élèves à Rochebelle.</p></div><div class="grid">
-      <article class="card"><div class="card-icon" aria-hidden="true">🖨️</div><h3>Des imprimantes accessibles aux élèves</h3><p>Installer des imprimantes en libre-service avec paiement sur place, pour imprimer pendant la journée sans devoir passer par la bibliothèque ou envoyer son fichier à l’avance.</p></article>
-      <article class="card"><div class="card-icon" aria-hidden="true">💧</div><h3>Un meilleur débit aux abreuvoirs</h3><p>Faire améliorer le débit d’eau avec les responsables concernés pour que remplir sa bouteille ne prenne pas toute la pause entre deux cours.</p></article>
-      <article class="card"><div class="card-icon" aria-hidden="true">🍕</div><h3>Le retour des pizzas</h3><p>Ramener à la cafétéria ce repas que tant d’élèves appréciaient, notamment comme option quand le menu du jour leur plaît moins.</p></article>
-      <article class="card"><div class="card-icon" aria-hidden="true">💳</div><h3>La carte aux distributrices</h3><p>Pouvoir acheter une collation même sans monnaie, surtout lorsque la cafétéria est fermée.</p></article>
-      <article class="card"><div class="card-icon" aria-hidden="true">📅</div><h3>Des examens mieux répartis</h3><p>Encourager les enseignants à coordonner leurs évaluations pour éviter plusieurs examens le même jour, en dehors des semaines prévues à cet effet.</p></article>
-      <article class="card"><div class="card-icon" aria-hidden="true">🥗</div><h3>Des menus plus variés</h3><p>Proposer davantage de choix à la cafétéria selon les goûts et les demandes des élèves, tout en gardant des repas équilibrés.</p></article>
+      <article class="card"><h3>Des imprimantes accessibles aux élèves 🖨️</h3><p>Installer des imprimantes en libre-service avec paiement sur place, pour imprimer pendant la journée sans devoir passer par la bibliothèque ou envoyer son fichier à l’avance.</p></article>
+      <article class="card"><h3>Un meilleur débit aux abreuvoirs 💧</h3><p>Faire améliorer le débit d’eau avec les responsables concernés pour que remplir sa bouteille ne prenne pas toute la pause entre deux cours.</p></article>
+      <article class="card"><h3>Le retour des pizzas 🍕</h3><p>Ramener à la cafétéria ce repas que tant d’élèves appréciaient, notamment comme option quand le menu du jour leur plaît moins.</p></article>
+      <article class="card"><h3>La carte aux distributrices 💳</h3><p>Pouvoir acheter une collation même sans monnaie, surtout lorsque la cafétéria est fermée.</p></article>
+      <article class="card"><h3>Des examens mieux répartis 📅</h3><p>Encourager les enseignants à coordonner leurs évaluations pour éviter plusieurs examens le même jour, en dehors des semaines prévues à cet effet.</p></article>
+      <article class="card"><h3>Des menus plus variés 🥗</h3><p>Proposer davantage de choix à la cafétéria selon les goûts et les demandes des élèves, tout en gardant des repas équilibrés.</p></article>
     </div><p class="note">Ces propositions seront portées auprès de l’école et des responsables concernés.</p></div></section>
     <section class="seniors" id="s27"><div class="wrap"><div class="section-head"><span class="eyebrow">Réservé aux finissants 2027</span><h2>Notre dernière année mérite des souvenirs.</h2><p>S27, c’est notre cohorte de finissants. Voici les six activités de la Jeunesse Dorée pour notre dernière année.</p></div><div class="activity-grid">
-      <article class="activity"><strong>Senior Sunset</strong><p>Vers la fin juin, on se rassemble pour regarder le coucher du soleil avec de la musique, de la nourriture et des couvertures.</p></article>
-      <article class="activity"><strong>Senior Assassin</strong><p>Un jeu collectif sur application où chaque participant reçoit une cible à éliminer, organisé en mai ou juin à l’extérieur de l’école.</p></article>
-      <article class="activity"><strong>Senior Brunch</strong><p>Pendant la semaine d’examens de décembre, un brunch après les examens pour les finissants. Un sondage vous permettra de choisir le menu.</p></article>
-      <article class="activity"><strong>Senior Cache-cache</strong><p>Un grand cache-cache avec des équipes de 5 à 15 personnes que vous choisirez vous-mêmes.</p></article>
-      <article class="activity"><strong>Senior Prank</strong><p>Une journée de blagues, possiblement en avril, avec du matériel fourni par la JD pour transformer l’école de façon amusante.</p></article>
-      <article class="activity"><strong>Senior Field Day</strong><p>Une journée dehors avec de la poudre colorée, de la mousse, des jeux d’eau, un jeu gonflable et des activités qui rappellent le primaire.</p></article>
+      <article class="activity"><strong>Senior Sunset 🌞</strong><p>Vers la fin juin, on se rassemble pour regarder le coucher du soleil avec de la musique, de la nourriture et des couvertures.</p></article>
+      <article class="activity"><strong>Senior Assassin 🎯</strong><p>Un jeu collectif sur application où chaque participant reçoit une cible à éliminer, organisé en mai ou juin à l’extérieur de l’école.</p></article>
+      <article class="activity"><strong>Senior Brunch 🥐</strong><p>Pendant la semaine d’examens de décembre, un brunch après les examens pour les finissants. Un sondage vous permettra de choisir le menu.</p></article>
+      <article class="activity"><strong>Senior Cache-cache 🔎</strong><p>Un grand cache-cache avec des équipes de 5 à 15 personnes que vous choisirez vous-mêmes.</p></article>
+      <article class="activity"><strong>Senior Prank 🎈</strong><p>Une journée de blagues, possiblement en avril, avec du matériel fourni par la JD pour transformer l’école de façon amusante.</p></article>
+      <article class="activity"><strong>Senior Field Day 🎨</strong><p>Une journée dehors avec de la poudre colorée, de la mousse, des jeux d’eau, un jeu gonflable et des activités qui rappellent le primaire.</p></article>
     </div></div></section>
     <section class="fest" id="fest">
 <div class="wrap fest-row">
@@ -149,25 +164,25 @@
     <section class="boost" id="boost"><div class="wrap">
   <div class="section-head"><span class="eyebrow">Des ressources pour avancer</span><h2>JD Boost</h2><p>Parfois, il suffit de savoir à qui poser la bonne question. Nous voulons aider les élèves à trouver plus facilement les ressources dont ils ont besoin, à l’école comme après le secondaire.</p></div>
   <div class="boost-grid">
-    <article><span>01 / EMPLOI</span><h3>Décrocher un emploi</h3><p>Des endroits où déposer ton CV, des pistes d’emplois, des conseils pour préparer ta candidature et des informations sur le Carrefour jeunesse-emploi.</p></article>
-    <article><span>02 / ÉTUDES</span><h3>Choisir la suite</h3><p>Les portes ouvertes des cégeps, les programmes à explorer et les possibilités qu’ils ouvrent pour tes études et ton futur métier.</p></article>
-    <article><span>03 / ARGENT</span><h3>Préparer tes projets</h3><p>Des ressources pour estimer le coût de tes études, te fixer un objectif d’épargne et savoir vers qui te tourner si tu as besoin d’aide.</p></article>
-    <article><span>04 / BAL</span><h3>Trouver ta robe de bal</h3><p>Au moins 25 adresses pour découvrir des robes de bal dans différents styles et à différents prix.</p></article>
+    <article><span>01 / EMPLOI</span><span class="boost-icon" aria-hidden="true">💼</span><h3>Décrocher un emploi</h3><p>Des endroits où déposer ton CV, des pistes d’emplois et des conseils pour préparer ta candidature.</p></article>
+    <article><span>02 / ÉTUDES</span><span class="boost-icon" aria-hidden="true">🎓</span><h3>Choisir la suite</h3><p>Les portes ouvertes des cégeps, les programmes à explorer et les possibilités qu’ils ouvrent pour tes études et ton futur métier.</p></article>
+    <article><span>03 / ARGENT</span><span class="boost-icon" aria-hidden="true">💰</span><h3>Préparer tes projets</h3><p>Des ressources pour estimer le coût de tes études, te fixer un objectif d’épargne et savoir vers qui te tourner si tu as besoin d’aide.</p></article>
+    <article><span>04 / BAL</span><span class="boost-icon" aria-hidden="true">👗</span><h3>Trouver ta robe de bal</h3><p>Au moins 25 adresses pour découvrir des robes de bal dans différents styles et à différents prix.</p></article>
   </div>
-  <p class="boost-network">Nous avons accès à <strong>plus de 50 contacts et ressources</strong> auprès desquels poser des questions et chercher des pistes pour les élèves. Nous partagerons les informations utiles au fur et à mesure qu’elles seront vérifiées.</p>
-  <div class="funding" id="financement"><div><span class="eyebrow">Faire avancer les projets</span><h3>Bourses et financement</h3><p>Nous préparons plusieurs projets à déposer pour chercher du financement au bénéfice des élèves et de l’école. Nous voulons aussi proposer plus de quatre idées de campagnes de financement, en collaboration avec les responsables de Rochebelle et, lorsque ce sera possible, avec la Fondation de l’école.</p><p>Ces démarches pourraient aider à réaliser des activités et à soutenir les équipes qui ont besoin de matériel, notamment l’équipe de football. Nous chercherons aussi des partenaires pour appuyer des projets ouverts aux élèves. Chaque campagne et chaque partenariat devra être approuvé par l’école.</p></div><aside><strong>Une idée ou un contact utile ?</strong><p>Parle à un membre de la Jeunesse Dorée. On veut rassembler les bonnes personnes pour faire avancer des projets concrets.</p></aside></div>
+  <p class="boost-network">Nous avons accès à <strong>plus de 50 contacts et ressources</strong> auprès desquels poser des questions et chercher des pistes pour les élèves. Nous partagerons les informations au fur et à mesure.</p>
+  <div class="funding" id="financement"><div><span class="eyebrow">Faire avancer les projets</span><h3>Bourses et financement</h3><p>Nous préparerons plusieurs projets à déposer pour chercher du financement au bénéfice des élèves et de l’école. Nous proposerons aussi <strong>plus de cinq campagnes de financement</strong> en collaboration avec la Fondation de l’école.</p><p>Ces démarches pourront aider à réaliser des activités et à soutenir les équipes qui ont besoin de matériel, notamment en danse, en volley-ball et en football. Nous chercherons aussi des partenaires pour appuyer des projets ouverts aux élèves.</p></div><aside><strong>Une idée ou un contact utile ?</strong><p>Parle à un membre de la Jeunesse Dorée. Plus on rassemble de contacts et d’idées, plus on peut faire avancer les projets des élèves.</p></aside></div>
 </div></section>
 <section class="voice" id="voix">
 <div class="wrap voice-inner">
 <div>
 <span class="eyebrow">Les voix RCH</span>
 <h2>On veut aussi entendre tes idées.</h2>
-<p>Une activité à proposer ? Quelque chose à améliorer à Rochebelle ? Partage-le de façon anonyme dans notre formulaire. Une boîte à idées sera aussi prévue pour celles et ceux qui préfèrent écrire sur place.</p>
+<p>Une activité à proposer ? Quelque chose à améliorer à Rochebelle ? Partage-le dans notre formulaire. Une boîte à idées sera aussi prévue pour celles et ceux qui préfèrent écrire sur place.</p>
 </div>
 <div class="voice-box">
 <strong>Ton idée pourrait faire bouger les choses. ✦</strong>
-<p>Le lien du formulaire anonyme sera ajouté ici et partagé sur notre Instagram.</p>
-<span class="link-pending">Lien du formulaire à ajouter</span>
+<p>Partage ton idée avec notre équipe grâce au formulaire Les voix RCH.</p>
+<a class="voice-form-link" href="https://docs.google.com/forms/d/e/1FAIpQLSd_X3ZM8ws9eChO5i8ustb7RxkyC2rTynnwVKbcevJtYQkfDA/viewform" target="_blank" rel="noopener noreferrer">Envoyer une idée ↗</a><a class="form-url" href="https://docs.google.com/forms/d/e/1FAIpQLSd_X3ZM8ws9eChO5i8ustb7RxkyC2rTynnwVKbcevJtYQkfDA/viewform" target="_blank" rel="noopener noreferrer">https://docs.google.com/forms/d/e/1FAIpQLSd_X3ZM8ws9eChO5i8ustb7RxkyC2rTynnwVKbcevJtYQkfDA/viewform</a>
 </div>
 </div>
 </section>
